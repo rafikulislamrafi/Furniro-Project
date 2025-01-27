@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary: #b88e2f;
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Montserrat', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1400px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.space-btwin {
+  justify-content: space-between;
+}
+.alin-center {
+  align-items: center;
+}
+/* ====== Common Css End ====== */
+/* ====== Nav Bar Start ====== */
+nav {
+  background-color: #e6e6e6;
+}
+.nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+.nav ul li a {
+  font-size: 18px;
+  margin: 38px 0;
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  transition: 0.3s;
+}
+.nav ul li a:hover {
+  color: #b88e2f;
+}
+nav .nav-icon a {
+  font-size: 25px;
+  color: #000;
+  margin: 0 20px;
+  transition: 0.3s;
+}
+nav .nav-icon a:hover {
+  color: #b88e2f;
+}
+/* ====== Nav Bar End ====== */
+/* ===== HERO Start =======*/
+.hero-areia {
+  background-image: url(../img/backgraund-img.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.hero-areia .container {
+  height: 100%;
+}
+.hero-areia .row {
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+.hero-areia .hero-box {
+  justify-content: end;
+  align-items: center;
+  border-radius: 10px;
+  width: 643px;
+  background: #fff3e3;
+}
+.hero-areia .hero-box .hero-cnt {
+  padding: 60px 50px 37px 33px;
+}
+.hero-areia .hero-box .hero-cnt h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.19em;
+  color: #333;
+}
+.hero-areia .hero-box .hero-cnt h3 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 125%;
+  color: var(--primary);
+  padding: 4px 0 14px 0;
+}
+.hero-areia .hero-box .hero-cnt p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: #333;
+}
+.hero-areia .hero-box .hero-cnt a {
+  padding: 25px 72px;
+  width: 232px;
+  height: 74px;
+  background: var(--primary);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  margin-top: 46px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.hero-areia .hero-box .hero-cnt a:hover {
+  color: #b88e2f;
+  background-color: #fff;
+}
+/* ===== HERO End =======*/
+/* ===== Browse Start =======*/
+.browse-areia .browse-cnt h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: #333;
+  margin-top: 55px;
+  text-align: center;
+}
+.browse-areia .browse-cnt p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 60px;
+}
+.browse-areia .browse-card h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.browse-areia .browse-card {
+  transition: 0.4s;
+}
+.browse-areia .browse-card:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Browse End ===== */
+/* ===== Product Start ===== */
+.product-areia {
+  height: 1084px;
+  margin: 55px 0 70px 0;
+}
+.product-areia h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #3a3a3a;
+  margin-bottom: 32px;
+}
+.product-areia .row {
+  gap: 32px;
+}
+.product-card {
+  width: calc(25% - 32px);
+  position: relative;
+}
+.product-card .product-img img {
+  width: 100%;
+  display: block;
+}
+.product-card .product-img {
+  position: relative;
+}
+.product-card .product-img .lavel {
+  width: 48px;
+  height: 48px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 48px;
+  color: #fff;
+  border-radius: 100%;
+  background-color: #e97171;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  text-align: center;
+}
+.product-card .product-img .lavel-red {
+  background-color: #ff3b3f;
+}
+.product-card .product-img .lavel-green {
+  background-color: #2ec1ac;
+}
+.product-card .product-cnt {
+  padding: 16px 16px 30px 16px;
+  background: #f4f5f7;
+}
+.product-card .product-cnt h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #3a3a3a;
+  margin: 16px 0 8px 0;
+  transition: 0.3s;
+}
+.product-card .product-cnt h5:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.product-card .product-cnt p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #898989;
+}
+.product-card .product-cnt h6 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #3a3a3a;
+  margin-top: 8px;
+}
+.product-card .product-cnt h6 span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: line-through;
+  color: #b0b0b0;
+  padding-left: 16px;
+}
+.product-card .overlay {
+  background: rgba(58, 58, 58, 0.72);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: 0.3s cubic-bezier(0.39, 0.23, 0.19, 0.94);
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.product-card:hover .overlay {
+  transform: scaleY(1);
+}
+.product-card .overlay .overlay-cnt {
+  align-items: center;
+}
+.product-card .overlay .overlay-cnt .overlay-btn {
+  justify-content: center;
+  display: flex;
+}
+.product-card .overlay .overlay-cnt .overlay-btn a {
+  width: 202px;
+  height: 48px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--primary);
+  background: #fff;
+  padding: 12px 50px;
+  transition: 0.3s;
+  display: block;
+}
+.product-card .overlay .overlay-cnt .overlay-btn a:hover {
+  color: white;
+  background-color: var(--primary);
+}
+.product-card .overlay .overlay-cnt .icon {
+  margin-top: 24px;
+}
+.overlay-cnt .icon a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  padding: 0 10px;
+}
+.icon a:hover {
+  color: var(--primary);
+}
+/* ===== Product End ===== */
+/* ===== Furniture Start ===== */
+.furniture {
+  width: 1799px;
+  height: 853px;
+  background: #fcf8f3;
+  margin: auto;
+  position: relative;
+}
+.furniture h6 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #616161;
+  padding: 65px 0 8px 0;
+}
+.furniture h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #3a3a3a;
+}
+.furniture .funiture-img1 {
+  position: absolute;
+  top: 126px;
+  left: 0;
+}
+.furniture .funiture-img2 {
+  position: absolute;
+  top: 195px;
+  left: 124px;
+}
+.furniture .funiture-img3 {
+  position: absolute;
+  top: 275px;
+  left: 653px;
+}
+.furniture .funiture-img4 {
+  position: absolute;
+  top: 524px;
+  left: 0;
+}
+.furniture .funiture-img5 {
+  position: absolute;
+  top: 524px;
+  left: 200px;
+}
+.furniture .funiture-img6 {
+  position: absolute;
+  top: 196px;
+  right: 498px;
+}
+.furniture .funiture-img7 {
+  position: absolute;
+  top: 140px;
+  right: 0;
+}
+.furniture .funiture-img8 {
+  position: absolute;
+  top: 570px;
+  right: 132px;
+}
+.furniture .funiture-img9 {
+  position: absolute;
+  top: 590px;
+  right: 390px;
+}
+/* ===== Furniture End ===== */
+/* ===== About Start ===== */
+.about {
+  height: 505px;
+}
+.about .row {
+  margin: 48px 0 38px 0;
+}
+.about .adress h5 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+.about .adress p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #9f9f9f;
+  margin-top: 50px;
+}
+.about .links p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.about .links a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin-top: 50px;
+  display: inline-block;
+}
+.about .helps p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.about .helps a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin-top: 50px;
+  display: inline-block;
+}
+.about .newsletter p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.about .newsletter input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #9f9f9f;
+  margin-top: 50px;
+  border: none;
+  border-bottom: 1px solid #9f9f9f;
+}
+.about .newsletter button {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #9f9f9f;
+}
+.about .border {
+  border: 1px solid #d9d9d9;
+  width: 1400px;
+  height: 0px;
+  margin-top: 47px;
+}
+.about .foter h6{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+.about .foter h6 a{
+  color: #000;
+  text-decoration: underline;
+}
+.about a:hover{
+  text-decoration: underline;
+}
+
+/* ===== About End ===== */
